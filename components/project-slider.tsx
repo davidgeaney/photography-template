@@ -9,31 +9,31 @@ const projects = [
     id: 1,
     title: "Lonely Life at the Baltimore",
     camera: "Shot with Sony a6000",
-    image: "/images/home/lonelylifeatbaltimore.jpg",
+    image: "/images/home/projectslider/lonelylifeatbaltimore.jpg",
   },
   {
     id: 2,
     title: "A Symphony of Seasons",
     camera: "Shot with Canon EOS R5",
-    image: "/images/home/asymphonyofseasons.jpg",
+    image: "/images/home/projectslider/asymphonyofseasons.jpg",
   },
   {
     id: 3,
     title: "Urban Geometry",
     camera: "Shot with Fujifilm X-T4",
-    image: "/images/home/urbangeometry.jpg",
+    image: "/images/home/projectslider/urbangeometry.jpg",
   },
   {
     id: 4,
     title: "Whispers of Nature",
     camera: "Shot with Nikon Z7",
-    image: "/images/home/whispersofnature.jpg",
+    image: "/images/home/projectslider/whispersofnature.jpg",
   },
   {
     id: 5,
     title: "Ethereal Portraits",
     camera: "Shot with Leica Q2",
-    image: "/images/home/etherealportraits.jpg",
+    image: "/images/home/projectslider/etherealportraits.jpg",
   },
 ]
 

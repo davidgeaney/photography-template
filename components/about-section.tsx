@@ -82,7 +82,7 @@ export default function AboutSection() {
             >
               <div className="relative aspect-[3/4] overflow-hidden rounded-lg">
                 <Image
-                  src="/images/about1.jpg"
+                  src="/images/about/about1.jpg"
                   alt="Photography showcase"
                   fill
                   className="object-cover"
@@ -91,7 +91,7 @@ export default function AboutSection() {
 
               <div className="relative aspect-[1/1] overflow-hidden rounded-lg">
                 <Image
-                  src="/images/about2.jpg"
+                  src="/images/about/about2.jpg"
                   alt="Photography showcase"
                   fill
                   className="object-cover"
@@ -107,7 +107,7 @@ export default function AboutSection() {
             >
               <div className="relative aspect-[1/1] overflow-hidden rounded-lg">
                 <Image
-                  src="/images/about3.jpg"
+                  src="/images/about/about3.jpg"
                   alt="Photography showcase"
                   fill
                   className="object-cover"
@@ -116,7 +116,7 @@ export default function AboutSection() {
 
               <div className="relative aspect-[3/4] overflow-hidden rounded-lg">
                 <Image
-                  src="/images/about4.jpg"
+                  src="/images/about/about4.jpg"
                   alt="Photography showcase"
                   fill
                   className="object-cover"
