@@ -5,15 +5,25 @@ import { motion } from "framer-motion"
 
 const categories = ["Landscape", "Wildlife", "Architectural", "Travel", "Portrait"]
 
-export default function CategoryFilters() {
-  const [activeCategory, setActiveCategory] = useState<string | null>(null)
+interface CategoryFiltersProps {
+  onCategoryChange?: (category: string | null) => void
+}
+
+export default function CategoryFilters({ onCategoryChange }: CategoryFiltersProps) {
+  const [activeCategory, setActiveCategory] = useState<string | null>("Landscape")
+
+  const handleCategoryClick = (category: string) => {
+    const newCategory = activeCategory === category ? null : category
+    setActiveCategory(newCategory)
+    onCategoryChange?.(newCategory)
+  }
 
   return (
     <div className="flex flex-wrap gap-3">
       {categories.map((category) => (
         <button
           key={category}
-          onClick={() => setActiveCategory(activeCategory === category ? null : category)}
+          onClick={() => handleCategoryClick(category)}
           className={`relative px-4 py-2 rounded-full border transition-colors duration-300 ${
             activeCategory === category
               ? "border-zinc-200 text-zinc-100"

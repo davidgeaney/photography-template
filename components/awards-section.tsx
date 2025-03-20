@@ -12,7 +12,7 @@ const awards = [
     title: "Sony World Photography Awards",
     description: "Recognition for exceptional landscape photography showcasing natural wonders.",
     expanded: false,
-    image: "/placeholder.svg?height=300&width=500",
+    image: "/images/home/recognition/sonyworldphotographyawards.jpg",
   },
   {
     id: 2,
@@ -20,7 +20,7 @@ const awards = [
     title: "Travel Photographer Of The Year",
     description: "Honored for capturing cultural narratives through immersive visual storytelling.",
     expanded: false,
-    image: "/placeholder.svg?height=300&width=500",
+    image: "/images/home/recognition/travelphotographeroftheyear.jpg",
   },
   {
     id: 3,
@@ -28,7 +28,7 @@ const awards = [
     title: "Magnum Photography Award",
     description: "Celebrated for innovative approaches to documentary photography.",
     expanded: false,
-    image: "/placeholder.svg?height=300&width=500",
+    image: "/images/home/recognition/magnumphotographyaward.jpg",
   },
   {
     id: 4,
@@ -36,7 +36,7 @@ const awards = [
     title: "International Photography Awards",
     description: "Recognized for technical excellence and artistic vision in portrait photography.",
     expanded: false,
-    image: "/placeholder.svg?height=300&width=500",
+    image: "/images/home/recognition/internationalphotographyawards.jpg",
   },
 ]
 

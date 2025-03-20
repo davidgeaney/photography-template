@@ -12,14 +12,14 @@ const services = [
     title: "Portrait Photography",
     description: "Capturing personalities and emotions in carefully composed portraits that tell your unique story.",
     features: ["Individual Portraits", "Family Portraits", "Corporate Headshots", "Environmental Portraits"],
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/images/services/ourexpertise/portraitphotography.jpg",
   },
   {
     id: 2,
     title: "Landscape Photography",
     description: "Breathtaking natural vistas and urban landscapes captured with dramatic lighting and composition.",
     features: ["Natural Landscapes", "Urban Cityscapes", "Aerial Photography", "Long Exposure Techniques"],
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/images/services/ourexpertise/landscapephotography.jpg",
   },
   {
     id: 3,
@@ -27,21 +27,21 @@ const services = [
     description:
       "Documenting special moments from corporate events to intimate gatherings with an unobtrusive approach.",
     features: ["Corporate Events", "Conferences", "Parties & Celebrations", "Award Ceremonies"],
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/images/services/ourexpertise/eventphotography.jpg",
   },
   {
     id: 4,
     title: "Commercial Photography",
     description: "Elevating your brand with professional product and promotional photography that sells.",
     features: ["Product Photography", "Food & Beverage", "Real Estate", "Architectural Photography"],
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/images/services/ourexpertise/commercialphotography.jpg",
   },
   {
     id: 5,
     title: "Wedding Photography",
     description: "Telling the story of your special day with a perfect blend of candid moments and artistic portraits.",
     features: ["Full Day Coverage", "Engagement Sessions", "Album Design", "Destination Weddings"],
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/images/services/ourexpertise/weddingphotography.jpg",
   },
 ]
 

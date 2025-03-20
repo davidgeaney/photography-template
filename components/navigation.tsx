@@ -38,21 +38,15 @@ export default function Navigation() {
         behavior: "smooth",
       })
     } else {
-      // Navigate to the new page
-      router.push(path)
-
-      // Scroll to top after navigation
-      window.scrollTo({
-        top: 0,
-        behavior: "auto",
-      })
+      // Navigate to the new page with scroll restoration
+      router.push(path, { scroll: true })
     }
   }
 
   return (
     <>
       <nav
-        className={`fixed top-0 left-0 w-full z-50 px-6 py-6 flex justify-between items-center transition-all duration-300 ${
+        className={`fixed top-0 left-0 w-full z-50 px-6 py-6 flex justify-between items-center transition-all duration-200 ${
           scrolled
             ? "bg-zinc-950/90 backdrop-blur-md"
             : "bg-gradient-to-b from-zinc-900/80 to-transparent backdrop-blur-sm"
@@ -74,7 +68,7 @@ export default function Navigation() {
           >
             Home
             <span
-              className={`absolute bottom-0 left-0 h-0.5 bg-zinc-200 transition-all duration-300 ${
+              className={`absolute bottom-0 left-0 h-0.5 bg-zinc-200 transition-all duration-200 ${
                 isActive("/") ? "w-full" : "w-0 group-hover:w-full"
               }`}
             ></span>
@@ -87,7 +81,7 @@ export default function Navigation() {
           >
             Services
             <span
-              className={`absolute bottom-0 left-0 h-0.5 bg-zinc-200 transition-all duration-300 ${
+              className={`absolute bottom-0 left-0 h-0.5 bg-zinc-200 transition-all duration-200 ${
                 isActive("/services") ? "w-full" : "w-0 group-hover:w-full"
               }`}
             ></span>
@@ -100,7 +94,7 @@ export default function Navigation() {
           >
             Projects
             <span
-              className={`absolute bottom-0 left-0 h-0.5 bg-zinc-200 transition-all duration-300 ${
+              className={`absolute bottom-0 left-0 h-0.5 bg-zinc-200 transition-all duration-200 ${
                 isActive("/projects") ? "w-full" : "w-0 group-hover:w-full"
               }`}
             ></span>
@@ -113,7 +107,7 @@ export default function Navigation() {
           >
             Contact
             <span
-              className={`absolute bottom-0 left-0 h-0.5 bg-zinc-200 transition-all duration-300 ${
+              className={`absolute bottom-0 left-0 h-0.5 bg-zinc-200 transition-all duration-200 ${
                 isActive("/contact") ? "w-full" : "w-0 group-hover:w-full"
               }`}
             ></span>
@@ -141,7 +135,7 @@ export default function Navigation() {
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: -20 }}
-            transition={{ duration: 0.3 }}
+            transition={{ duration: 0.2 }}
             className="fixed inset-0 bg-zinc-950/95 z-40 flex flex-col items-center justify-center md:hidden"
           >
             <div className="flex flex-col items-center gap-8 text-2xl">

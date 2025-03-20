@@ -18,7 +18,7 @@ export default function ContactHero() {
     <div ref={containerRef} className="relative h-[70vh] overflow-hidden">
       <motion.div style={{ y, opacity }} className="absolute inset-0 z-0">
         <Image
-          src="/placeholder.svg?height=1080&width=1920"
+          src="/images/contact/contactpageherobackground.jpg"
           alt="Contact us"
           fill
           priority

@@ -11,21 +11,21 @@ const projects = [
     title: "Dawn's Glow at Misty Peaks Horizon",
     location: "Yosemite, USA",
     camera: "Sony Alpha A7R IV",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/images/home/ourexpertise/dawnsglowatmistypeakshorizon.jpg",
   },
   {
     id: 2,
     title: "Ethereal Fog in Alpine Valley",
     location: "Swiss Alps, Switzerland",
     camera: "Canon EOS R5",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/images/home/ourexpertise/etherealfoginalpinevalley.jpg",
   },
   {
     id: 3,
     title: "Twilight Reflections on Crystal Lake",
     location: "Banff, Canada",
     camera: "Nikon Z9",
-    image: "/placeholder.svg?height=600&width=800",
+    image: "/images/home/ourexpertise/twilightreflectionsoncrystallake.jpg",
   },
 ]
 

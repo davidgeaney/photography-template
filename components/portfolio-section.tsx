@@ -159,7 +159,7 @@ const portfolioItems = [
     description:
       "A breathtaking journey through the wild landscapes of Africa, capturing the raw beauty and power of its magnificent wildlife. This series explores the delicate balance of nature and the untamed spirit of the animal kingdom.",
     category: "Wildlife",
-    image: "/placeholder.svg?height=500&width=400",
+    image: "/images/home/ourwork/majesticcreaturesoftheafricansavanna.jpg",
     featured: true,
     client: "National Geographic",
     year: 2022,
@@ -171,7 +171,7 @@ const portfolioItems = [
     description:
       "Exploring the spiritual architecture and tranquil moments across ancient temples of Japan. This collection captures the harmony between human craftsmanship and natural surroundings, revealing moments of profound peace and contemplation.",
     category: "Architecture",
-    image: "/placeholder.svg?height=500&width=400",
+    image: "/images/home/ourwork/apilgrimsserenityintheeast.jpg",
     featured: true,
     client: "Architectural Digest",
     year: 2021,
@@ -183,7 +183,7 @@ const portfolioItems = [
     description:
       "Intimate portraits capturing the essence of human emotion and character. Each photograph in this series tells a unique story, revealing the depth and complexity of the human experience through careful composition and authentic connection.",
     category: "Portrait",
-    image: "/placeholder.svg?height=500&width=400",
+    image: "/images/home/ourwork/momentsframedinportraits.jpg",
     featured: false,
     client: "Vogue Magazine",
     year: 2023,

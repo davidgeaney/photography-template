@@ -10,7 +10,7 @@ const featuredProjects = [
     title: "Ethereal Landscapes",
     description:
       "An award-winning series capturing the mystical beauty of remote landscapes across five continents, showcasing nature's grandeur in its purest form.",
-    image: "/placeholder.svg?height=800&width=1200",
+    image: "/images/projects/featuredprojects/ethereallandscapes.jpg",
     awards: ["International Photography Awards", "Fine Art Photography Awards"],
   },
   {
@@ -18,7 +18,7 @@ const featuredProjects = [
     title: "Urban Perspectives",
     description:
       "A visual exploration of metropolitan architecture and urban life, examining the relationship between humans and the built environment.",
-    image: "/placeholder.svg?height=800&width=1200",
+    image: "/images/projects/featuredprojects/urbanperspectives.jpg",
     awards: ["Architectural Photography Awards", "Sony World Photography Awards"],
   },
   {
@@ -26,7 +26,7 @@ const featuredProjects = [
     title: "Faces of Humanity",
     description:
       "An intimate portrait series documenting diverse individuals across cultures, celebrating the universal human experience through compelling visual storytelling.",
-    image: "/placeholder.svg?height=800&width=1200",
+    image: "/images/projects/featuredprojects/facesofhumanity.jpg",
     awards: ["Portrait Photography Awards", "National Geographic Photo Contest"],
   },
 ]

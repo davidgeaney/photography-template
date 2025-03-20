@@ -9,31 +9,31 @@ const projects = [
     id: 1,
     title: "Lonely Life at the Baltimore",
     camera: "Shot with Sony a6000",
-    image: "/placeholder.svg?height=300&width=300",
+    image: "/images/home/lonelylifeatbaltimore.jpg",
   },
   {
     id: 2,
     title: "A Symphony of Seasons",
     camera: "Shot with Canon EOS R5",
-    image: "/placeholder.svg?height=300&width=300",
+    image: "/images/home/asymphonyofseasons.jpg",
   },
   {
     id: 3,
     title: "Urban Geometry",
     camera: "Shot with Fujifilm X-T4",
-    image: "/placeholder.svg?height=300&width=300",
+    image: "/images/home/urbangeometry.jpg",
   },
   {
     id: 4,
     title: "Whispers of Nature",
     camera: "Shot with Nikon Z7",
-    image: "/placeholder.svg?height=300&width=300",
+    image: "/images/home/whispersofnature.jpg",
   },
   {
     id: 5,
     title: "Ethereal Portraits",
     camera: "Shot with Leica Q2",
-    image: "/placeholder.svg?height=300&width=300",
+    image: "/images/home/etherealportraits.jpg",
   },
 ]
 
@@ -88,7 +88,7 @@ export default function ProjectSlider({ onSlideChange }: ProjectSliderProps) {
         <ChevronLeft className="w-4 h-4" />
       </button>
 
-      <div ref={sliderRef} className="overflow-hidden w-full relative h-[140px] md:h-[180px]">
+      <div ref={sliderRef} className="overflow-hidden w-full relative h-[160px] md:h-[200px]">
         {/* Current Project */}
         <div
           className={`absolute top-0 left-0 transition-all duration-500 ease-out flex flex-col ${
@@ -108,9 +108,9 @@ export default function ProjectSlider({ onSlideChange }: ProjectSliderProps) {
               className="object-cover w-full h-full transition-transform duration-500 hover:scale-110"
             />
           </div>
-          <div className="mt-2">
+          <div className="mt-3">
             <h3 className="text-sm font-medium text-zinc-200">{projects[currentIndex].title}</h3>
-            <p className="text-xs text-zinc-400">{projects[currentIndex].camera}</p>
+            <p className="text-xs text-zinc-400 mt-1">{projects[currentIndex].camera}</p>
           </div>
         </div>
 
@@ -133,9 +133,9 @@ export default function ProjectSlider({ onSlideChange }: ProjectSliderProps) {
               className="object-cover w-full h-full transition-transform duration-500 hover:scale-110"
             />
           </div>
-          <div className="mt-2">
+          <div className="mt-3">
             <h3 className="text-sm font-medium text-zinc-300">{nextProject.title}</h3>
-            <p className="text-xs text-zinc-500">{nextProject.camera}</p>
+            <p className="text-xs text-zinc-500 mt-1">{nextProject.camera}</p>
           </div>
         </div>
       </div>

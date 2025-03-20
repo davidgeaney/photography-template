@@ -18,7 +18,7 @@ export default function ProjectsHero() {
     <div ref={containerRef} className="relative h-screen overflow-hidden">
       <motion.div style={{ y, opacity }} className="absolute inset-0 z-0">
         <Image
-          src="/placeholder.svg?height=1080&width=1920"
+          src="/images/projects/projectsherobackground.jpg"
           alt="Photography portfolio"
           fill
           priority

@@ -13,7 +13,8 @@ const testimonials = [
     company: "Elevate Brands",
     quote:
       "Working with Creacy Studio transformed our brand imagery. Their attention to detail and ability to capture our company's essence exceeded all expectations. The photos have significantly improved our marketing materials.",
-    image: "/placeholder.svg?height=100&width=100",
+    image: "/images/sarahjohnsonpfp.jpg",
+    showcaseImage: "/images/services/testimonials/sarahjohnsonshowcaseimage.jpg"
   },
   {
     id: 2,
@@ -22,7 +23,8 @@ const testimonials = [
     company: "Global Conferences",
     quote:
       "The team at Creacy documented our international conference with such professionalism and artistry. They were unobtrusive yet captured every important moment. The images tell the complete story of our event.",
-    image: "/placeholder.svg?height=100&width=100",
+    image: "/images/michaelchenpfp.jpg",
+    showcaseImage: "/images/services/testimonials/michaelchenshowcaseimage.jpg"
   },
   {
     id: 3,
@@ -31,7 +33,8 @@ const testimonials = [
     company: "Wedding Client",
     quote:
       "Our wedding photos are absolutely breathtaking. Creacy has a gift for capturing genuine emotions and creating timeless images. Every time we look at our album, we relive those special moments all over again.",
-    image: "/placeholder.svg?height=100&width=100",
+    image: "/images/emmarodriguezpfp.jpg",
+    showcaseImage: "/images/services/testimonials/emmarodriguezshowcaseimage.jpg"
   },
   {
     id: 4,
@@ -40,7 +43,8 @@ const testimonials = [
     company: "Architectural Innovations",
     quote:
       "The architectural photography provided by Creacy Studio has been instrumental in showcasing our projects. Their understanding of light, space, and composition brings our designs to life in the most compelling way.",
-    image: "/placeholder.svg?height=100&width=100",
+    image: "/images/davidthompsonpfp.jpg",
+    showcaseImage: "/images/services/testimonials/davidthompsonshowcaseimage.jpg"
   },
 ]
 
@@ -123,8 +127,8 @@ export default function ServiceTestimonials() {
 
                 <div className="relative aspect-square rounded-lg overflow-hidden">
                   <Image
-                    src="/placeholder.svg?height=600&width=600"
-                    alt="Client project"
+                    src={testimonials[currentIndex].showcaseImage}
+                    alt={`${testimonials[currentIndex].name}'s project showcase`}
                     fill
                     className="object-cover"
                   />

@@ -5,28 +5,117 @@ import Image from "next/image"
 import { motion, useInView, AnimatePresence } from "framer-motion"
 import { ArrowUpRight, X } from "lucide-react"
 
-// Generate a large array of projects
-const projectsData = Array.from({ length: 24 }, (_, i) => ({
-  id: i + 1,
-  title: [
-    "Urban Reflections",
-    "Serene Wilderness",
-    "Architectural Geometry",
-    "Portrait of Solitude",
-    "Coastal Dreams",
-    "Mountain Majesty",
-    "City Lights",
-    "Desert Whispers",
-  ][i % 8],
-  category: ["landscape", "portrait", "architecture", "commercial", "wedding", "travel"][i % 6],
-  description:
-    "A captivating exploration of form, light, and emotion captured through our unique photographic perspective.",
-  client: ["Vogue Magazine", "National Geographic", "Architectural Digest", "Sony", "Private Client", "Tourism Board"][
-    i % 6
-  ],
-  year: 2020 + (i % 4),
-  image: `/placeholder.svg?height=${600 + (i % 3) * 100}&width=${500 + (i % 3) * 100}`,
-}))
+// Replace the generated array with static project data
+const projectsData = [
+  {
+    id: 1,
+    title: "Urban Reflections",
+    category: "landscape",
+    description: "A captivating exploration of form, light, and emotion captured through our unique photographic perspective.",
+    client: "Vogue Magazine",
+    year: 2020,
+    image: "/images/projects/landscape/urbanreflections.jpg",
+  },
+  {
+    id: 2,
+    title: "Serene Wilderness",
+    category: "landscape",
+    description: "A captivating exploration of form, light, and emotion captured through our unique photographic perspective.",
+    client: "National Geographic",
+    year: 2021,
+    image: "/images/projects/landscape/serenewilderness.jpg",
+  },
+  {
+    id: 3,
+    title: "Architectural Geometry",
+    category: "architecture",
+    description: "A captivating exploration of form, light, and emotion captured through our unique photographic perspective.",
+    client: "Architectural Digest",
+    year: 2022,
+    image: "/images/projects/architecture/architecturalgeometry.jpg",
+  },
+  {
+    id: 4,
+    title: "Portrait of Solitude",
+    category: "portrait",
+    description: "A captivating exploration of form, light, and emotion captured through our unique photographic perspective.",
+    client: "Sony",
+    year: 2023,
+    image: "/images/projects/portrait/portraitofsolitude.jpg",
+  },
+  {
+    id: 5,
+    title: "Coastal Dreams",
+    category: "landscape",
+    description: "A captivating exploration of form, light, and emotion captured through our unique photographic perspective.",
+    client: "Tourism Board",
+    year: 2020,
+    image: "/images/projects/landscape/coastaldreams.jpg",
+  },
+  {
+    id: 6,
+    title: "Mountain Majesty",
+    category: "landscape",
+    description: "A captivating exploration of form, light, and emotion captured through our unique photographic perspective.",
+    client: "National Geographic",
+    year: 2021,
+    image: "/images/projects/landscape/mountainmajesty.jpg",
+  },
+  {
+    id: 7,
+    title: "City Lights",
+    category: "architecture",
+    description: "A captivating exploration of form, light, and emotion captured through our unique photographic perspective.",
+    client: "Architectural Digest",
+    year: 2022,
+    image: "/images/projects/architecture/citylights.jpg",
+  },
+  {
+    id: 8,
+    title: "Desert Whispers",
+    category: "landscape",
+    description: "A captivating exploration of form, light, and emotion captured through our unique photographic perspective.",
+    client: "Vogue Magazine",
+    year: 2023,
+    image: "/images/projects/landscape/desertwhispers.jpg",
+  },
+  {
+    id: 9,
+    title: "Urban Portraits",
+    category: "portrait",
+    description: "A captivating exploration of form, light, and emotion captured through our unique photographic perspective.",
+    client: "Private Client",
+    year: 2020,
+    image: "/images/projects/portrait/urbanportraits.jpg",
+  },
+  {
+    id: 10,
+    title: "Wedding Day",
+    category: "wedding",
+    description: "A captivating exploration of form, light, and emotion captured through our unique photographic perspective.",
+    client: "Private Client",
+    year: 2021,
+    image: "/images/projects/wedding/weddingday.jpg",
+  },
+  {
+    id: 11,
+    title: "Commercial Campaign",
+    category: "commercial",
+    description: "A captivating exploration of form, light, and emotion captured through our unique photographic perspective.",
+    client: "Sony",
+    year: 2022,
+    image: "/images/projects/commercial/commercialcampaign.jpg",
+  },
+  {
+    id: 12,
+    title: "Travel Adventures",
+    category: "travel",
+    description: "A captivating exploration of form, light, and emotion captured through our unique photographic perspective.",
+    client: "Tourism Board",
+    year: 2023,
+    image: "/images/projects/travel/traveladventures.jpg",
+  }
+]
 
 export default function ProjectsGallery() {
   const ref = useRef<HTMLDivElement>(null)

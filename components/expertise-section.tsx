@@ -6,6 +6,14 @@ import Image from "next/image"
 
 const categories = ["Landscape", "Wildlife", "Architectural", "Travel", "Portrait"]
 
+const expertiseImages = {
+  Landscape: "/images/landscape.jpg",
+  Wildlife: "/images/wildlife.jpg",
+  Architectural: "/images/architectural.jpg",
+  Travel: "/images/travel.jpg",
+  Portrait: "/images/portrait.jpg",
+}
+
 export default function ExpertiseSection() {
   const ref = useRef<HTMLDivElement>(null)
   const isInView = useInView(ref, { once: false, amount: 0.2 })
@@ -45,12 +53,16 @@ export default function ExpertiseSection() {
               When moments captured every dreams crafted into beautiful reality
             </motion.h2>
 
-            <motion.div variants={itemVariants} className="relative aspect-video overflow-hidden rounded-lg">
+            <motion.div 
+              variants={itemVariants} 
+              className="relative aspect-video overflow-hidden rounded-lg"
+              key={activeCategory}
+            >
               <Image
-                src="/placeholder.svg?height=600&width=800"
-                alt="Photography showcase"
+                src={expertiseImages[activeCategory as keyof typeof expertiseImages]}
+                alt={`${activeCategory} photography showcase`}
                 fill
-                className="object-cover"
+                className="object-cover transition-opacity duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-zinc-900 to-transparent opacity-70"></div>
             </motion.div>

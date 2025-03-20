@@ -6,6 +6,14 @@ import { motion, useScroll, useTransform } from "framer-motion"
 import CategoryFilters from "./category-filters"
 import ProjectSlider from "./project-slider"
 
+const categoryImages = {
+  Landscape: "/images/home/background/landscape.jpg",
+  Wildlife: "/images/home/background/wildlife.jpg",
+  Architectural: "/images/home/background/architectural.jpg",
+  Travel: "/images/home/background/travel.jpg",
+  Portrait: "/images/home/background/portrait.jpg",
+}
+
 export default function HeroSection() {
   const containerRef = useRef<HTMLDivElement>(null)
   const { scrollYProgress } = useScroll({
@@ -17,22 +25,27 @@ export default function HeroSection() {
   const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0])
 
   const [currentSlide, setCurrentSlide] = useState(1)
+  const [selectedCategory, setSelectedCategory] = useState<string | null>("Landscape")
   const totalSlides = 5
+
+  const handleCategoryChange = (category: string | null) => {
+    setSelectedCategory(category)
+  }
 
   return (
     <div ref={containerRef} className="relative h-screen overflow-hidden">
       <motion.div style={{ y, opacity }} className="absolute inset-0 z-0">
         <Image
-          src="/images/photographyherobg.jpg"
-          alt="Modern architecture"
+          src={selectedCategory ? categoryImages[selectedCategory as keyof typeof categoryImages] : "/images/photographyherobg.jpg"}
+          alt={selectedCategory ? `${selectedCategory} photography` : "Modern architecture"}
           fill
           priority
-          className="object-cover opacity-50"
+          className="object-cover opacity-50 transition-opacity duration-700"
         />
         <div className="absolute inset-0 bg-gradient-to-b from-zinc-900/70 via-zinc-900/50 to-zinc-950"></div>
       </motion.div>
 
-      <div className="relative z-10 h-full flex flex-col justify-between pt-32 pb-12 px-6 md:px-12">
+      <div className="relative z-10 h-full flex flex-col justify-between pt-32 pb-24 px-6 md:px-12">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
@@ -46,7 +59,7 @@ export default function HeroSection() {
 
         <div className="w-full">
           <div className="flex flex-col md:flex-row justify-between items-start md:items-end gap-8">
-            <CategoryFilters />
+            <CategoryFilters onCategoryChange={handleCategoryChange} />
 
             <div className="w-full md:w-auto flex flex-col gap-4">
               <div className="flex items-center gap-4">
