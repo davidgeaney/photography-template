@@ -8,7 +8,7 @@ import Link from "next/link"
 
 export default function AboutSection() {
   const ref = useRef<HTMLDivElement>(null)
-  const isInView = useInView(ref, { once: false, amount: 0.3 })
+  const isInView = useInView(ref, { once: false, amount: 0.1 })
 
   const containerVariants = {
     hidden: { opacity: 0 },

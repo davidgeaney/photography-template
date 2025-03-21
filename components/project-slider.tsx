@@ -88,7 +88,7 @@ export default function ProjectSlider({ onSlideChange }: ProjectSliderProps) {
         <ChevronLeft className="w-4 h-4" />
       </button>
 
-      <div ref={sliderRef} className="overflow-hidden w-full relative h-[160px] md:h-[200px]">
+      <div ref={sliderRef} className="overflow-hidden w-full relative h-[200px] md:h-[250px]">
         {/* Current Project */}
         <div
           className={`absolute top-0 left-0 transition-all duration-500 ease-out flex flex-col ${
