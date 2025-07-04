@@ -46,17 +46,20 @@ export default function Navigation() {
   return (
     <>
       <nav
-        className={`fixed top-0 left-0 w-full z-50 px-6 py-6 flex justify-between items-center transition-all duration-200 ${
+        className={`fixed top-0 left-0 w-full z-50 px-12 py-6 flex justify-between items-center transition-all duration-200 ${
           scrolled
             ? "bg-zinc-950/90 backdrop-blur-md"
             : "bg-gradient-to-b from-zinc-900/80 to-transparent backdrop-blur-sm"
         }`}
       >
-        <button onClick={() => handleNavigation("/")} className="flex items-center gap-2 z-50">
-          <div className="w-10 h-10 bg-zinc-200 rounded-md flex items-center justify-center">
-            <span className="text-zinc-900 font-bold text-xl">C</span>
+        <button 
+          onClick={() => handleNavigation("/")} 
+          className="z-50 group"
+        >
+          <div className="flex flex-col leading-none">
+            <span className="text-2xl font-light tracking-wider text-zinc-200">CREACY</span>
+            <span className="text-xs font-light tracking-widest text-zinc-400 group-hover:text-zinc-300 transition-colors">PHOTOGRAPHY</span>
           </div>
-          <span className="font-medium tracking-wide">CREACY</span>
         </button>
 
         <div className="hidden md:flex items-center gap-8">
